@@ -1,0 +1,42 @@
+baseurl: 'https://stuxnet999.github.io'
+languageCode : "en-us"
+title: "Abhiram's Blog"
+theme: "xmin"
+googleAnalytics: "UA-170502718-1"
+
+permalinks:
+  note: "/note/:year/:month/:day/:slug/"
+  blog: "/dfir/:slug/"
+
+menu:
+  main:
+    - name: Home
+      url: ""
+      weight: 1
+    - name: DFIR blogs
+      url: "dfir/"
+      weight: 2
+    - name: Travel blogs
+      url: "travel/"
+      weight: 3
+    - name: About
+      url: "about/"
+      weight: 4
+    - name: Categories
+      url: "categories/"
+      weight: 5
+    - name: Tags
+      url: "tags/"
+      weight: 6
+    - name: Subscribe
+      url: "index.xml"
+      weight: 7
+
+params:
+  description: "Abhiram's blog"
+  footer: "Abhiram's blog      <br/>  [RSS Feed](/index.xml) | [Github](https://github.com/stuxnet999) | [Twitter](https://twitter.com/_abhiramKumar)"
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
